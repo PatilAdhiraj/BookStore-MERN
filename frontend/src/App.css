@@ -1,0 +1,150 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* Heading */
+
+h1 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 36px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* Form */
+
+.form-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 35px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-section form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #555;
+}
+
+/* Buttons */
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 14px;
+  background: #333;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* Books */
+
+.books {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.book-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.book-card h2 {
+  margin-bottom: 15px;
+}
+
+.book-card p {
+  margin: 8px 0;
+}
+
+/* Error */
+
+.error {
+  background: #ffe5e5;
+  color: #b00020;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+/* Details */
+
+.details {
+  background: white;
+  padding: 25px;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .container {
+    width: 94%;
+    padding: 25px 0;
+  }
+
+  .form-section form {
+    grid-template-columns: 1fr;
+  }
+
+  .books {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
